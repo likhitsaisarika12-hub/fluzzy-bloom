@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff8e5">
+<meta name="description" content="Fluzzy Bloom — handmade pipe-cleaner flowers and whimsical bouquets, crafted with love. Explore the portfolio and order through Instagram DM.">
+<title>Fluzzy Bloom — Little blooms, lots of love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#292825;--green:#5d654d;--sage:#e8e2ca;--pink:#f2e4dc;--rose:#92745c;--cream:#fff8e5;--lilac:#eee8df;--muted:#777064}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}
+.topbar{background:var(--ink);color:#fff;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+header{height:76px;padding:0 7vw;display:flex;align-items:center;justify-content:space-between;background:#fff8e5ee;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);border-bottom:1px solid #e8dfc9}
+.brand{display:inline-flex;align-items:center;line-height:0}.brand img{display:block;width:230px;height:auto;max-height:58px;object-fit:contain}.brand span{color:var(--rose)}nav{display:flex;gap:30px;font-size:13px;color:#566258}nav a:hover{color:var(--rose)}.nav-cta,.btn{background:var(--green);color:white;border-radius:100px;padding:13px 21px;font-size:12px;font-weight:700;letter-spacing:.04em;display:inline-flex;align-items:center;gap:9px;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--ink);transform:translateY(-2px)}
+.hero{padding:65px 7vw 78px;display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;overflow:hidden;background:radial-gradient(circle at 10% 15%,#f1e7d2 0,transparent 36%),radial-gradient(circle at 90% 85%,#e7e5d4 0,transparent 36%),var(--cream)}
+.eyebrow{color:var(--rose);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:27px;height:1px;background:var(--rose)}
+h1,h2,h3{font-family:"Playfair Display",serif;font-weight:500}h1{font-size:clamp(48px,6vw,82px);line-height:1.02;letter-spacing:-.045em;margin:22px 0}h1 em{color:var(--rose);font-weight:500}.hero-copy p{color:var(--muted);line-height:1.8;max-width:440px;font-size:15px;margin:0 0 27px}.hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.text-link{font-size:12px;font-weight:700;border-bottom:1px solid #9da99c;padding-bottom:5px}.hero-art{position:relative;max-width:540px;margin:auto}.hero-art:before{content:"";position:absolute;inset:7% 2% 0 5%;background:#e8dce9;border-radius:48% 52% 44% 56%/44% 43% 57% 56%;transform:rotate(-8deg)}.hero-art img{position:relative;width:100%;height:540px;object-fit:cover;object-position:center 35%;border-radius:48% 52% 44% 56%/44% 43% 57% 56%;box-shadow:0 25px 60px #3e3a3022}.sticker{position:absolute;right:-20px;bottom:25px;width:116px;height:116px;border-radius:50%;background:#fffaf5;display:grid;place-items:center;text-align:center;color:var(--rose);font-family:"Playfair Display",serif;font-style:italic;font-size:17px;line-height:1.15;box-shadow:0 10px 35px #3332;transform:rotate(9deg);z-index:2}
+.marquee{background:var(--sage);padding:16px 0;overflow:hidden;white-space:nowrap;color:var(--green);font-family:"Playfair Display",serif;font-style:italic;font-size:19px;letter-spacing:.04em}.marquee span{padding:0 22px}.marquee b{font-family:sans-serif;font-size:13px;color:var(--rose)}
+section{padding:88px 7vw}.section-head{text-align:center;max-width:620px;margin:0 auto 42px}.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(36px,4vw,53px);margin:13px 0}.section-head p{color:var(--muted);font-size:14px;line-height:1.8;margin:0}
+.gallery{background:#fff}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.work-card{border-radius:18px;overflow:hidden;background:var(--cream);transition:.25s;cursor:pointer}.work-card:hover{transform:translateY(-6px);box-shadow:0 16px 35px #2d3b2c18}.work-card .photo{height:280px;overflow:hidden;background:var(--pink)}.work-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.work-card:hover img{transform:scale(1.05)}.work-info{padding:16px 17px 19px}.work-info h3{font-size:20px;margin:0 0 5px}.work-info p{font-size:11px;color:var(--muted);margin:0;letter-spacing:.05em;text-transform:uppercase}
+.note{font-size:12px;color:var(--muted);text-align:center;margin:26px 0 0}
+.story{background:linear-gradient(120deg,#f4e9dc,#fff8e5 55%,#e9e8d8);display:grid;grid-template-columns:.9fr 1.1fr;gap:8vw;align-items:center}.story-art{position:relative}.story-art img{width:100%;height:480px;object-fit:cover;border-radius:180px 180px 22px 22px;box-shadow:0 18px 45px #493a3022}.story-art:after{content:"handmade with love";position:absolute;bottom:22px;left:-25px;background:#fffaf5;color:var(--rose);font-family:"Playfair Display",serif;font-style:italic;padding:13px 22px;border-radius:30px;box-shadow:0 8px 20px #3332}.story-copy h2{font-size:clamp(38px,4.5vw,58px);line-height:1.1;margin:17px 0}.story-copy p{color:#667066;line-height:1.9;font-size:14px;max-width:530px}.values{display:flex;gap:25px;flex-wrap:wrap;margin-top:28px}.value{font-size:12px;font-weight:700;color:var(--green);display:flex;align-items:center;gap:8px}.value i{font-style:normal;color:var(--rose);font-size:18px}
+.order{background:var(--ink);color:white;text-align:center;position:relative;overflow:hidden}.order:before,.order:after{content:"✿";position:absolute;color:#78927a22;font-size:220px;line-height:1}.order:before{left:-40px;top:-50px}.order:after{right:-35px;bottom:-100px}.order .section-head{position:relative;z-index:1}.order .eyebrow{color:#e7a7bb}.order .eyebrow:before{background:#e7a7bb}.order h2{font-size:clamp(40px,5vw,64px);margin:16px 0}.order p{color:#d0d8d0}.order .btn{background:#f1cbd7;color:#493340}.order .btn:hover{background:white}.order-small{position:relative;z-index:1;color:#bac8bb;font-size:12px;margin-top:17px}
+footer{padding:28px 7vw;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;background:#1d2a22;color:#d9e1d8;font-size:11px}footer .brand{background:#fff8e5;border-radius:5px;padding:3px 9px}footer .brand img{width:185px;max-height:43px}footer p{margin:0;color:#aebbb0}.social{color:#f1cbd7;font-weight:700}
+.lightbox{position:fixed;inset:0;background:#17221eeF;display:none;align-items:center;justify-content:center;padding:25px;z-index:30}.lightbox.open{display:flex}.lightbox img{max-width:min(90vw,800px);max-height:86vh;object-fit:contain;border-radius:12px}.close{position:absolute;right:25px;top:20px;border:0;background:#fff;color:#26352b;border-radius:50%;width:42px;height:42px;font-size:24px;cursor:pointer}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:50px}.hero-art{width:min(100%,500px)}.hero-art img{height:480px}.gallery-grid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr}.story-art{max-width:520px;margin:auto}.story-copy{max-width:650px;margin:auto}}
+@media(max-width:600px){header{height:66px;padding:0 5vw}.brand img{width:175px;max-height:48px}nav{gap:13px}nav a:not(.nav-cta){display:none}.nav-cta{padding:11px 14px;font-size:10px}.hero{padding:42px 6vw 58px;gap:35px}h1{font-size:54px}.hero-art img{height:390px}.sticker{width:92px;height:92px;font-size:14px;right:-6px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.work-card .photo{height:190px}.work-info{padding:12px}.work-info h3{font-size:16px}.work-info p{font-size:9px}.section-head{margin-bottom:28px}section{padding:65px 6vw}.story-art img{height:390px}.story-art:after{left:-5px}.values{gap:14px}footer{padding:25px 6vw}footer .brand img{width:150px}}
+</style>
+</head>
+<body>
+<div class="topbar">A little handmade happiness, just for you ✿</div>
+<header>
+  <a class="brand" href="#home" aria-label="Fluzzy Bloom home"><img src="assets/fluzzy-bloom-logo.jpg" alt="Fluzzy Bloom"></a>
+  <nav><a href="#collection">Our creations</a><a href="#story">Our story</a><a class="nav-cta" href="https://www.instagram.com/fuzzy_bloom._?cplk=MTJyaXNlZ200MjV3Zw==" target="_blank" rel="noopener">DM to order ↗</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="hero-copy">
+  <div class="eyebrow">Tiny details. Big feelings.</div>
+  <h1>Flowers that<br>last <em>forever.</em></h1>
+  <p>Meet your new favourite kind of bloom. Each Fluzzy Bloom creation is shaped by hand from soft, colourful pipe cleaners — made to brighten your space and make someone smile.</p>
+  <div class="hero-actions"><a class="btn" href="https://www.instagram.com/fuzzy_bloom._?cplk=MTJyaXNlZ200MjV3Zw==" target="_blank" rel="noopener">♡ Order on Instagram <span>↗</span></a><a class="text-link" href="#collection">Explore the portfolio ↓</a></div>
+ </div>
+ <div class="hero-art"><img src="assets/peach-flower-bouquet.webp" alt="Handmade peach and brown pipe-cleaner flower bouquet"><div class="sticker">made with<br>love & a<br>little fluff ✿</div></div>
+</section>
+<div class="marquee"><span>✿ handmade blooms</span><b>✳</b><span>forever flowers</span><b>✳</b><span>made to make you smile</span><b>✳</b><span>little gifts, big love</span><b>✳</b><span>✿ handmade blooms</span></div>
+<section class="gallery" id="collection">
+ <div class="section-head"><div class="eyebrow">The Fluzzy gallery</div><h2>Made by hand, <em>made to keep.</em></h2><p>A little peek at our handmade world. Every petal is shaped with care, and every piece has its own personality.</p></div>
+ <div class="gallery-grid">
+  <article class="work-card" data-full="assets/jellyfish-garden.webp"><div class="photo"><img src="assets/jellyfish-garden.webp" alt="Pink jellyfish-inspired pipe-cleaner flower garden" loading="lazy"></div><div class="work-info"><h3>Jellyfish Garden</h3><p>Whimsical decor · handmade</p></div></article>
+  <article class="work-card" data-full="assets/sunshine-bloom.webp"><div class="photo"><img src="assets/sunshine-bloom.webp" alt="Bright yellow handmade flower with purple centre" loading="lazy"></div><div class="work-info"><h3>Sunshine Bloom</h3><p>Statement flower · handmade</p></div></article>
+  <article class="work-card" data-full="assets/pink-jellyfish.webp"><div class="photo"><img src="assets/pink-jellyfish.webp" alt="Pastel pink jellyfish flower arrangement" loading="lazy"></div><div class="work-info"><h3>Pink Jellyfish</h3><p>Whimsical decor · handmade</p></div></article>
+  <article class="work-card" data-full="assets/coral-flower-lamp.webp"><div class="photo"><img src="assets/coral-flower-lamp.webp" alt="Coral pink pipe-cleaner flower lamp" loading="lazy"></div><div class="work-info"><h3>Coral Glow</h3><p>Flower lamp · handmade</p></div></article>
+  <article class="work-card" data-full="assets/lavender-flower-lamp.webp"><div class="photo"><img src="assets/lavender-flower-lamp.webp" alt="Lavender purple pipe-cleaner flower lamp" loading="lazy"></div><div class="work-info"><h3>Lavender Dream</h3><p>Flower lamp · handmade</p></div></article>
+  <article class="work-card" data-full="assets/golden-flower-lamp.webp"><div class="photo"><img src="assets/golden-flower-lamp.webp" alt="Golden yellow handmade flower lamp" loading="lazy"></div><div class="work-info"><h3>Golden Hour</h3><p>Flower lamp · handmade</p></div></article>
+  <article class="work-card" data-full="assets/peach-flower-bouquet.webp"><div class="photo"><img src="assets/peach-flower-bouquet.webp" alt="Peach and brown handmade pipe-cleaner bouquet" loading="lazy"></div><div class="work-info"><h3>Peachy Bouquet</h3><p>Floral arrangement · handmade</p></div></article>
+  <article class="work-card" data-full="assets/pink-leaf-flower.webp"><div class="photo"><img src="assets/pink-leaf-flower.webp" alt="Pink pipe-cleaner flower with a large green leaf" loading="lazy"></div><div class="work-info"><h3>Blush & Leaf</h3><p>Single stem · handmade</p></div></article>
+  <article class="work-card" data-full="assets/blue-daisy.webp"><div class="photo"><img src="assets/blue-daisy.webp" alt="Bright blue handmade pipe-cleaner daisy" loading="lazy"></div><div class="work-info"><h3>Blue Daisy</h3><p>Single stem · handmade</p></div></article>
+  <article class="work-card" data-full="assets/white-bloom-lamp.webp"><div class="photo"><img src="assets/white-bloom-lamp.webp" alt="White and yellow handmade flower lamp" loading="lazy"></div><div class="work-info"><h3>Cloud Nine</h3><p>Flower lamp · handmade</p></div></article>
+  <article class="work-card" data-full="assets/white-lotus-lamp.webp"><div class="photo"><img src="assets/white-lotus-lamp.webp" alt="White lotus-inspired handmade flower lamp" loading="lazy"></div><div class="work-info"><h3>Little Lotus</h3><p>Flower lamp · handmade</p></div></article>
+  <article class="work-card" data-full="assets/buttercream-flower-lamp.webp"><div class="photo"><img src="assets/buttercream-flower-lamp.webp" alt="Buttercream yellow handmade flower lamp" loading="lazy"></div><div class="work-info"><h3>Buttercream Bloom</h3><p>Flower lamp · handmade</p></div></article>
+ </div>
+ <p class="note">Tap any creation to see it up close · Designs and colours can be discussed through Instagram DM.</p>
+</section>
+<section class="story" id="story">
+ <div class="story-art"><img src="assets/pink-leaf-flower.webp" alt="Handmade pink pipe-cleaner flower with a green leaf" loading="lazy"></div>
+ <div class="story-copy"><div class="eyebrow">A little about us</div><h2>Not just flowers.<br><em>Little keepsakes.</em></h2><p>Fluzzy Bloom is all about turning soft pipe cleaners into something special. From cheerful single stems to playful bouquets and glowing flower designs, each creation is made by hand, one twist and petal at a time.</p><p>Have a colour in mind or a special person to surprise? Send us a message and let's dream up something lovely together.</p><div class="values"><div class="value"><i>✿</i> Handmade with care</div><div class="value"><i>♡</i> Made for gifting</div><div class="value"><i>✧</i> Custom ideas welcome</div></div></div>
+</section>
+<section class="order" id="order">
+ <div class="section-head"><div class="eyebrow">Your next favourite gift</div><h2>Let's make something<br><em>bloomin' lovely.</em></h2><p>Found a favourite? Want a custom colour or bouquet? We'd love to hear your idea.</p><a class="btn" href="https://www.instagram.com/fuzzy_bloom._?cplk=MTJyaXNlZ200MjV3Zw==" target="_blank" rel="noopener">Message @fuzzy_bloom._ ↗</a><div class="order-small">Orders & enquiries are handled through Instagram DM.</div></div>
+</section>
+</main>
+<footer><a class="brand" href="#home" aria-label="Fluzzy Bloom home"><img src="assets/fluzzy-bloom-logo.jpg" alt="Fluzzy Bloom"></a><p>Handmade with love, petal by petal. © <span id="year"></span> Fluzzy Bloom</p><a class="social" href="https://www.instagram.com/fuzzy_bloom._?cplk=MTJyaXNlZ200MjV3Zw==" target="_blank" rel="noopener">Instagram ↗</a></footer>
+<div class="lightbox" id="lightbox" aria-label="Expanded flower photo"><button class="close" aria-label="Close image">×</button><img src="" alt="Expanded handmade flower creation"></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const box=document.getElementById('lightbox'), big=box.querySelector('img');
+document.querySelectorAll('.work-card').forEach(card=>card.addEventListener('click',()=>{big.src=card.dataset.full;big.alt=card.querySelector('img').alt;box.classList.add('open')}));
+function closeBox(){box.classList.remove('open');big.src=''}
+box.querySelector('.close').addEventListener('click',closeBox);
+box.addEventListener('click',e=>{if(e.target===box)closeBox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+</script>
+</body>
+</html>
